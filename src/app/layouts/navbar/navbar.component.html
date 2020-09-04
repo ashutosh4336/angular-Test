@@ -17,15 +17,7 @@
       <li class="nav-item">
         <a routerLink="/dashboard" class="nav-link">Dashboard</a>
       </li>
-      <li class="nav-item ml-3">
-        <a
-          routerLink="/auth"
-          class="nav-link btn btn-warning btn-xs text-dark px-4 shadow"
-          >Login / Signup</a
-        >
-      </li>
-
-      <!-- <li class="nav-item dropdown">
+      <li class="nav-item dropdown">
         <a
           class="nav-link dropdown-toggle"
           id="navbarDropdown"
@@ -34,15 +26,36 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          Dropdown
+          About Us
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item">Action</a>
-          <a class="dropdown-item">Another action</a>
+          <a class="dropdown-item">Contact Us</a>
+          <a class="dropdown-item">About</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item">Something else here</a>
+          <a class="dropdown-item">T & C</a>
         </div>
-      </li> -->
+      </li>
+      <li class="nav-item ml-3">
+        <a
+          routerLink="/login"
+          class="nav-link btn btn-warning btn-xs text-dark px-4 shadow"
+          >Login</a
+        >
+      </li>
+      <li class="nav-item ml-3">
+        <a
+          routerLink="/signup"
+          class="nav-link btn btn-warning btn-xs text-dark px-4 shadow"
+          >SignUp</a
+        >
+      </li>
+      <li class="nav-item ml-3">
+        <a
+          class="nav-link btn btn-danger btn-xs px-4 text-white shadow"
+          (click)="logOut()"
+          >Logout</a
+        >
+      </li>
     </ul>
   </div>
 </nav>

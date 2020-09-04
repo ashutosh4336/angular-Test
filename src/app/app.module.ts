@@ -12,8 +12,11 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
 
+import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
+
+import { HeaderInterceptorService } from './interceptors/header-interceptor.service';
 
 @NgModule({
   declarations: [
@@ -30,10 +33,17 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(), // ToastrModule added
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: HeaderInterceptorService,
+      multi: true,
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

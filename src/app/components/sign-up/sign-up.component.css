@@ -4,11 +4,14 @@
 }
 
 .form-signin {
-  max-width: 420px;
+  max-width: 520px;
   padding: 30px 38px 66px;
-  margin: 0 auto;
+  margin: 1rem auto;
   background-color: #eee;
-  border: 3px dotted rgba(0, 0, 0, 0.1);
+  border: 3px solid rgb(33, 56, 133);
+  -webkit-box-shadow: 27px 42px 63px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 27px 42px 63px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 27px 42px 63px 0px rgba(0, 0, 0, 0.75);
 }
 
 .form-signin-heading {
@@ -23,17 +26,20 @@
   padding: 10px;
 }
 
-input[type="text"] {
+input {
+  margin-bottom: 10px;
+}
+/* input[type="text"] {
   margin-bottom: 0px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-}
-
+} */
+/*
 input[type="password"] {
   margin-bottom: 20px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-}
+} */
 
 .colorgraph {
   height: 7px;

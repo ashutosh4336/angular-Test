@@ -4,11 +4,14 @@
 }
 
 .form-signin {
-  max-width: 420px;
+  max-width: 460px;
   padding: 30px 38px 66px;
   margin: 0 auto;
   background-color: #eee;
-  border: 3px dotted rgba(0, 0, 0, 0.1);
+  border: 3px solid rgb(33, 56, 133);
+  -webkit-box-shadow: 27px 42px 63px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 27px 42px 63px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 27px 42px 63px 0px rgba(0, 0, 0, 0.75);
 }
 
 .form-signin-heading {
