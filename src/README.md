@@ -1,9 +1,9 @@
 ### get working everything of bootstrap
 
-npm i bootstrap
-npm i jquery
-npm i popper.js
-npm i font-awesome
+- npm i bootstrap
+- npm i jquery
+- npm i popper.js
+- npm i font-awesome
 
 Replace `popper.min.js` with
 `https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js` this file

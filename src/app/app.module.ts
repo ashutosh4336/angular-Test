@@ -17,6 +17,7 @@ import { LoginComponent } from './components/login/login.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 
 import { HeaderInterceptorService } from './interceptors/header-interceptor.service';
+import { PageNotFoundComponent } from './layouts/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { HeaderInterceptorService } from './interceptors/header-interceptor.serv
 
     LoginComponent,
     SignUpComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
